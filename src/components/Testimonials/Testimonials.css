@@ -1,0 +1,118 @@
+.testimonials {
+  background: #ffffff; /* Fundo branco */
+  padding: 60px 20px;
+  color: #333; /* Cor do texto mais escura para contraste */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonials-content {
+  max-width: 1200px;
+  width: 100%;
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  color: #333;
+}
+
+.testimonials p {
+  font-size: 1.25rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.testimonials-carousel-container {
+  overflow: hidden;
+  width: 100%;
+  height: auto; /* Aumenta a altura do container */
+  padding: 20px; /* Aumenta a altura do container */
+}
+
+.testimonials-carousel {
+  display: grid;
+  grid-template-columns: repeat(6, 33.33%); /* Ajusta para o número de cards */
+  transition: transform 0.5s ease-in-out; /* Animação de transição */
+}
+
+@media (max-width: 768px) {
+  .testimonials-carousel {
+    grid-template-columns: repeat(6, 100%); /* Ajusta para o número de cards */
+  }
+}
+
+.testimonials-card {
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 0 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+
+.testimonials-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.quote-icon {
+  font-size: 2rem;
+  color: #ff6347;
+  margin-bottom: 10px;
+}
+
+.testimonials-card p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.testimonials-card h4 {
+  font-size: 1.25rem;
+  color: #333;
+}
+
+.carousel-controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.carousel-control {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #ff6347;
+  transition: color 0.3s ease;
+}
+
+.carousel-control:hover {
+  color: #e5533d;
+}
+
+.testimonials-button {
+  background-color: #ff6347;
+  color: #ffffff;
+  border: none;
+  padding: 1rem 2.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  border-radius: 50px;
+  margin-top: 2rem;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.testimonials-button:hover {
+  background-color: #e5533d;
+  color: #ffffff;
+  transform: translateY(-5px);
+}

@@ -1,0 +1,131 @@
+.results {
+  background: linear-gradient(135deg, #0d1b2a, #1b263b); /* Gradiente de fundo azul escuro */
+  padding: 60px 20px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.results-content {
+  max-width: 1200px;
+  width: 100%;
+  text-align: center;
+}
+
+.results h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.results p {
+  font-size: 1.25rem;
+  color: #dddddd;
+  margin-bottom: 2rem;
+}
+
+.results-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.results-card {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  flex: 1 1 calc(33% - 20px); /* Responsivo: três cards por linha */
+  min-width: 250px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+  color: #333;
+}
+
+.results-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.results-card p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.results-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.results-button {
+  background-color: #ff6347;
+  color: #ffffff;
+  border: none;
+  padding: 1rem 2.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  border-radius: 50px;
+  margin-top: 2rem;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.results-button:hover {
+  background-color: #e5533d;
+  color: #ffffff;
+  transform: translateY(-5px);
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  .results h2 {
+    font-size: 2rem;
+  }
+
+  .results p {
+    font-size: 1rem;
+  }
+
+  .results-card {
+    flex: 1 1 calc(50% - 20px); /* Ajusta a largura dos cards */
+  }
+}
+
+@media (max-width: 768px) {
+  .results h2 {
+    font-size: 1.75rem;
+  }
+
+  .results p {
+    font-size: 0.875rem;
+  }
+
+  .results-card {
+    flex: 1 1 100%; /* Responsivo: um card por linha */
+    min-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .results h2 {
+    font-size: 1.5rem;
+  }
+
+  .results p {
+    font-size: 0.75rem;
+  }
+
+  .results-card h3 {
+    font-size: 1.25rem;
+  }
+
+  .results-card p {
+    font-size: 0.875rem;
+  }
+}
