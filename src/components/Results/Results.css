@@ -110,6 +110,10 @@
     flex: 1 1 100%; /* Responsivo: um card por linha */
     min-width: 100%;
   }
+
+  .testimonials-button {
+    font-size: 0.75rem;
+  }
 }
 
 @media (max-width: 480px) {
