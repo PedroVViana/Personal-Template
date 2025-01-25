@@ -44,7 +44,7 @@
     grid-template-columns: repeat(6, 100%); /* Ajusta para o número de cards */
   }
   .testimonials-button {
-    font-size: 0.75rem;
+    font-size: 0.5em;
   }
 }
 

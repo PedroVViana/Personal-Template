@@ -8,7 +8,8 @@
 }
 
 .about-content {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
   max-width: 1400px; /* Aumenta a largura máxima do conteúdo */
   width: 100%;
@@ -19,8 +20,7 @@
 }
 
 .about-image {
-  flex: 1.5; /* Aumenta a proporção da imagem */
-  max-width: 50%; /* Aumenta a largura máxima da imagem */
+  max-width: 100%;
 }
 
 .about-image img {
@@ -30,7 +30,6 @@
 }
 
 .about-text {
-  flex: 2;
   padding: 40px;
   text-align: left;
 }
@@ -43,8 +42,8 @@
 }
 
 .about-cards {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
 }
 
@@ -53,8 +52,6 @@
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  flex: 1 1 calc(50% - 20px); /* Responsivo: dois cards por linha */
-  min-width: 250px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -89,12 +86,11 @@
 /* Responsividade */
 @media (max-width: 1024px) {
   .about-content {
-    flex-direction: column;
+    grid-template-columns: 1fr;
     padding: 20px;
   }
 
   .about-image {
-    max-width: 100%;
     border-radius: 10px 10px 0 0;
   }
 
@@ -105,10 +101,6 @@
 
   .about h2 {
     font-size: 2rem;
-  }
-
-  .about-card {
-    flex: 1 1 100%; /* Responsivo: um card por linha */
   }
 }
 
