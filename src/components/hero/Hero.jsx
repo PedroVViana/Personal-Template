@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import './Hero.css';
-import imghero from '../../assets/Photo/heroBlack.png'; // Importe a imagem que você deseja usar no componente
+import imghero from '../../assets/Photo/personal.png'; // Importe a imagem que você deseja usar no componente
 
 const Hero = () => {
   useEffect(() => {
